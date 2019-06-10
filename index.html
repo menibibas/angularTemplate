@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="app">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="actorCtrl.js"></script>
+
     <title>Document</title>
 </head>
-<body>
-    
+
+<body ng-controller="actorCtrl">
+    <div class="container">
+        <h1>Actor Gallery</h1>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6" ng-repeat="actor in actors">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{actor.image }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="{{actor.imdb}}" target="_blank">
+                        <h5 class="card-title">{{actor.fullName()}}</h5>
+                    </a>
+                        <p class="card-text">{{actor.birthday|date}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>
