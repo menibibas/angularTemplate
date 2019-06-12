@@ -9,9 +9,9 @@ select {
 
 
 .selected{
-    background-color:red;
+    background-color:gray;
   }
   
   .white{
-    background-color:blue;
+    background-color:white;
   }
