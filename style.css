@@ -2,3 +2,16 @@
     margin-bottom: 20px; 
     
 }
+
+select {
+    margin-bottom: 20px;
+}
+
+
+.selected{
+    background-color:red;
+  }
+  
+  .white{
+    background-color:blue;
+  }

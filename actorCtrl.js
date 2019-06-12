@@ -30,5 +30,37 @@ app.controller("actorCtrl", function ($scope) {
         $scope.actor.push(actor);
     }
 
+    $scope.queryActor = "";
+    $scope.filterActor = function(actor) {
+    if (actor.fname.toLowerCase().includes($scope.queryActor.toLowerCase()) || 
+        actor.lname.toLowerCase().includes($scope.queryActor.toLowerCase())) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+//   Implement actor selection (no multiple selection - only one card can be selected. If clicking on a selected card it will deselect it). Use ng-class for this.
+
+//   $scope.orderProp = "";
+//   $scope.orderByProp = function(propName) {
+    
+//     if ($scope.orderProp !== propName) {
+//       // Clicking on this column for the first time
+//       // I want an ascending order so putting false in reverse
+//       $scope.orderProp = propName;
+//       $scope.orderReverse = false;
+//     } else {
+//       // Clicking on the same columns - reversing the order
+//       $scope.orderReverse = !$scope.orderReverse;
+//     }
+//   }
+  $scope.class = "selected";
+  $scope.changeClass = function(){
+    if ($scope.class === "selected")
+      $scope.class = "white";
+    else
+      $scope.class = "selected";
+  };
 
 });
