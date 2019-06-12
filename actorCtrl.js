@@ -55,10 +55,10 @@ app.controller("actorCtrl", function ($scope) {
 //       $scope.orderReverse = !$scope.orderReverse;
 //     }
 //   }
-  $scope.class = "selected";
+  $scope.class = "";
   $scope.changeClass = function(){
     if ($scope.class === "selected")
-      $scope.class = "white";
+      $scope.class = "unselect";
     else
       $scope.class = "selected";
   };
