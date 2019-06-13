@@ -29,7 +29,7 @@
           <br>
         <div class="row">
             <div class="col-md-4 col-sm-6" ng-repeat="actor in actors | filter: filterActor | orderBy : orderProp">
-                <div class="card" style="width: 18rem;"  ng-class="class" ng-click="changeClass()">
+                <div class="card" style="width: 18rem;"  ng-class="{'bg-danger' : actor === selectedActor}" ng-click="onSelectActor(actor)">
                     <img src="{{actor.image }}" class="card-img-top" alt="..." >
                     <div class="card-body">
                         <a href="{{actor.imdb}}" target="_blank">

@@ -1,0 +1,49 @@
+
+[
+   {
+    "fname": "Bruce",
+    "lname": "Willis",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjA0MjMzMTE5OF5BMl5BanBnXkFtZTcwMzQ2ODE3Mw@@._V1_UY317_CR27,0,214,317_AL_.jpg",
+    "birthday": "1955-03-19",
+    "imbd": "https://www.imdb.com/name/nm0000246"
+   },
+   {
+    "fname": "Sharon",
+    "lname": "Stone",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTg0MDU1ODQwNF5BMl5BanBnXkFtZTcwOTc3MjQwNA@@._V1_UY317_CR4,0,214,317_AL_.jpg",
+    "birthday": "1958-03-10",
+    "imbd": "https://www.imdb.com/name/nm0000232"
+   },
+   {
+    "fname": "Michael",
+    "lname": "Douglas",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTQ3NzMzOTQ3MF5BMl5BanBnXkFtZTcwOTE0MzY1Mw@@._V1_UY317_CR13,0,214,317_AL_.jpg",
+    "birthday": "1944-09-25",
+    "imbd": "https://www.imdb.com/name/nm0000140"
+   },
+   {
+    "fname": "Ashton",
+    "lname": "Kutcher",
+    "image": "https://m.media-amazon.com/images/M/MV5BMzIzMTE4NzcyMl5BMl5BanBnXkFtZTgwODA2NTQyNTM@._V1_UY317_CR131,0,214,317_AL_.jpg",
+    "birthday": "1978-02-07",
+    "imbd": "https://www.imdb.com/name/nm0005110"
+   },
+   {
+    "fname": "Jennifer",
+    "lname": "Aniston",
+    "image": "https://m.media-amazon.com/images/M/MV5BNjk1MjIxNjUxNF5BMl5BanBnXkFtZTcwODk2NzM4Mg@@._V1_UY317_CR3,0,214,317_AL_.jpg",
+    "birthday": "1969-02-11",
+    "imbd": "https://www.imdb.com/name/nm0000098"
+   },
+   {
+    "fname": "Scarlett",
+    "lname": "Johansson",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_UY317_CR23,0,214,317_AL_.jpg",
+    "birthday": "1984-11-22",
+    "imbd": "https://www.imdb.com/name/nm0424060"
+   }
+] 
+
+
+
+
