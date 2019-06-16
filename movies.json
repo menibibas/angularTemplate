@@ -1,0 +1,46 @@
+[
+    {
+     "name": "Die Hard",
+     "release": "1988-07-20",
+     "length": "132 minutes",
+     "poster": "https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+     "stars": ["Bruce Willis", "Alan Rickman", "Bonnie Bedelia"]
+    },
+    {
+     "name": "Basic Instinct",
+     "release": "1992-03-20",
+     "length": "127 minutes",
+     "poster": "https://m.media-amazon.com/images/M/MV5BZjk0YmJkNjItNDY3Mi00ZWFiLWEwY2EtMDJlZWJlOWZkNzJlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+     "stars": ["Michael Douglas", "Sharon Stone", "George Dzundza"]
+    },
+    {
+     "name": "Wall Street",
+     "release": "1987-12-11",
+     "length": "126 minutes",
+     "poster": "https://m.media-amazon.com/images/M/MV5BNmEyZGQ4NDQtNTEzZC00MDczLWE4ZTEtYTg0ODg2NTkyMWM3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+     "stars": ["Charlie Sheen", "Michael Douglas", "Tamara Tunie"]
+    },
+    {
+     "name": "Just Married",
+     "release": "2003-01-10",
+     "length": "95 minutes",
+     "poster": "https://m.media-amazon.com/images/M/MV5BMTk1MzM4NzUzNl5BMl5BanBnXkFtZTcwMDQyMDczMw@@._V1_UY268_CR0,0,182,268_AL_.jpg",
+     "stars": ["Ashton Kutcher", "Brittany Murphy", "Christian Kane"]
+    },
+    {
+     "name": "Cake",
+     "release": "2015-01-23",
+     "length": "102 minutes",
+     "poster": "https://m.media-amazon.com/images/M/MV5BMmE2ZTQ5NTUtMzM2NS00YTIxLWEyMDQtMjBiMGNmODgwN2U5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+     "stars": ["Jennifer Aniston", "Adriana Barraza", "Anna Kendrick"]
+    },
+    {
+     "name": "Lost In Translation",
+     "release": "2003-10-03",
+     "length": "102 minutes",
+     "poster": "https://m.media-amazon.com/images/M/MV5BMTI2NDI5ODk4N15BMl5BanBnXkFtZTYwMTI3NTE3._V1_UX182_CR0,0,182,268_AL_.jpg",
+     "stars": ["Bill Murray", "Scarlett Johansson", "Giovanni Ribisi"]
+    }
+ ] 
+ 
+ 

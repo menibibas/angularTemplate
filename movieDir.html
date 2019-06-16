@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="media">
+        <img class="mr-5" ng-src="{{movie.poster}}">
+        <div class="media-body">
+            <h5 class="mt-0">{{movie.name}}</h5>
+            <p>{{movie.release|date}}</p>
+            <p>{{movie.length}}</p>
+            <h6>Main Stars</h6>
+            <ul>
+                <li ng-repeat="(key,value) in movie.stars">{{value}}</li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
