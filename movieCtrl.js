@@ -1,13 +1,16 @@
-app.controller("movieCtrl", function ($scope,$http) {
+app.controller("movieCtrl", function (movieSrv,$scope) {
 
     //**** Business Logic - this will eventually move to service ****
-    function Movie (name, releaseDate, length, poster, stars) {
-        this.name = name;
-        this.release = releaseDate;
-        this.length = length;
-        this.poster = poster;
-        this.stars = stars;
-    };
+    // function Movie (name, releaseDate, length, poster, stars) {
+    //     this.name = name;
+    //     this.release = releaseDate;
+    //     this.length = length;
+    //     this.poster = poster;
+    //     this.stars = stars;
+    // };
+    // Movie.prototype.convertToMinutes=function(){
+    //   return convert.convertMinToHrs(this.length);
+    // }
     
     // Load  movies
     // $scope.movies = [];
@@ -21,18 +24,23 @@ app.controller("movieCtrl", function ($scope,$http) {
 
 
     $scope.movies = [];
-    $http.get("movies.json").then(function(res) {
-    // on success
+    movieSrv.getMovies().then(function(movies) {
+      $scope.movies = movies;
+    }, function(err) {
+      $log.error(err);
+    })
+  //   $http.get("movies.json").then(function(res) {
+  //   // on success
     
-    for (var i = 0; i < res.data.length; i++) {
-      var movie = new Movie(res.data[i].name, res.data[i].release, 
-        res.data[i].length, res.data[i].poster, res.data[i].stars);
-      $scope.movies.push(movie);
-      }
-  }, function(err) {
-    console.error(err);
+  //   for (var i = 0; i < res.data.length; i++) {
+  //     var movie = new Movie(res.data[i].name, res.data[i].release, 
+  //       res.data[i].length, res.data[i].poster, res.data[i].stars);
+  //     $scope.movies.push(movie);
+  //     }
+  // }, function(err) {
+  //   console.error(err);
 
-  })
+  // })
 
    
 });

@@ -13,6 +13,8 @@
     <script src="actorCtrl.js"></script>
     <script src="movieCtrl.js"></script>
     <script src="movieDir.js"></script>
+    <script src="convertSrv.js"></script>
+    <script src="movieSrv.js"></script>
 
     <title>Document</title>
 </head>
@@ -32,7 +34,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-6" ng-repeat="actor in actors | filter: filterActor | orderBy : orderProp as filteredActors">
                 <div class="card" style="width: 18rem;" ng-class="{'bg-danger' : actor === selectedActor}" ng-click="onSelectActor(actor)">
-                    <img src="{{actor.image }}" class="card-img-top" alt="...">
+                    <img ng-src="{{actor.image}}" class="card-img-top">
                     <div class="card-body">
                         <a href="{{actor.imdb}}" target="_blank">
                             <h5 class="card-title">{{actor.fullName()}}</h5>
@@ -51,6 +53,7 @@
     <div ng-controller="movieCtrl" class="container">
         <div class="media my-5" ng-repeat="movie in movies">
         <movie-data></movie-data>
+        
             <!-- <img class="mr-3" ng-src="{{movie.poster}}">
             <div class="media-body">
                 <h5 class="mt-0">{{movie.name}}</h5>
