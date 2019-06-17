@@ -23,7 +23,7 @@ app.factory("movieSrv", function($log,$http,$q,convert) {
             movies.push(movie);
           }
           // movies are ready - I can resolve the promise
-          alert("hi")
+        //   alert("hi")
 
           async.resolve(movies);
         }, function(err) {
