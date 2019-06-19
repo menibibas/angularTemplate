@@ -1,0 +1,30 @@
+
+    <div class=container>
+        <h1>Actor Gallery</h1>
+        <input class="form-control my-3" placeholder="Filter Actor by first name or last name" ng-model="queryActor">
+        <br>
+        <h5>Sort-by options</h5>
+        <select ng-model="orderProp">
+            <option value="fname">First Name</option>
+            <option value="lname">Last Name</option>
+            <option value="birthday">Birthday</option>
+        </select>
+        <br>
+        <div class="row">
+            <div class="col-md-4 col-sm-6" ng-repeat="actor in actors | filter: filterActor | orderBy : orderProp as filteredActors">
+                <div class="card" style="width: 18rem;" ng-class="{'bg-danger' : actor === selectedActor}" ng-click="onSelectActor(actor)">
+                    <img ng-src="{{actor.image}}" class="card-img-top">
+                    <div class="card-body">
+                        <a href="{{actor.imdb}}" target="_blank">
+                            <h5 class="card-title">{{actor.fullName()}}</h5>
+                        </a>
+                        <p class="card-text">{{actor.birthday|date}}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div ng-show="filteredActors.length===0">
+                No actors found
+            </div>
+    </div>

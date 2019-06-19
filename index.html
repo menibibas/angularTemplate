@@ -9,66 +9,57 @@
     <link rel="stylesheet" href="style.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
     <script src="app.js"></script>
     <script src="actorCtrl.js"></script>
     <script src="movieCtrl.js"></script>
     <script src="movieDir.js"></script>
     <script src="convertSrv.js"></script>
     <script src="movieSrv.js"></script>
+    <script src="movieDetailsCtrl.js"></script>
 
     <title>Document</title>
 </head>
 
-<body ng-controller="actorCtrl">
+<body>
     <div class="container">
-        <h1>Actor Gallery</h1>
-        <input class="form-control my-3" placeholder="Filter Actor by first name or last name" ng-model="queryActor">
-        <br>
-        <h5>Sort-by options</h5>
-        <select ng-model="orderProp">
-            <option value="fname">First Name</option>
-            <option value="lname">Last Name</option>
-            <option value="birthday">Birthday</option>
-        </select>
-        <br>
-        <div class="row">
-            <div class="col-md-4 col-sm-6" ng-repeat="actor in actors | filter: filterActor | orderBy : orderProp as filteredActors">
-                <div class="card" style="width: 18rem;" ng-class="{'bg-danger' : actor === selectedActor}" ng-click="onSelectActor(actor)">
-                    <img ng-src="{{actor.image}}" class="card-img-top">
-                    <div class="card-body">
-                        <a href="{{actor.imdb}}" target="_blank">
-                            <h5 class="card-title">{{actor.fullName()}}</h5>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand" href="#">Moviesapp</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <!-- <a class="nav-link" href="#">Home -->
+                            <span class="sr-only">(current)</span>
                         </a>
-                        <p class="card-text">{{actor.birthday|date}}</p>
-                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/actors">Actors</a>
 
-                </div>
+
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#!/movies">Movies</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
 
-        </div>
-        <div ng-show="filteredActors.length===0">
-            No actors found
-        </div>
+        </nav>
+
+
+
     </div>
-    <div ng-controller="movieCtrl" class="container">
-        <div class="media my-5" ng-repeat="movie in movies">
-        <movie-data></movie-data>
-        
-            <!-- <img class="mr-3" ng-src="{{movie.poster}}">
-            <div class="media-body">
-                <h5 class="mt-0">{{movie.name}}</h5>
-                <p>{{movie.release|date}}</p>
-                <p>{{movie.length}}</p>
-                <h6>Main Stars</h6>
-                <ul>
-                    <li ng-repeat="(key,value) in movie.stars">{{value}}</li>
-                    <li>{{movie.stars[0]}}</li>
-                    <li>{{movie.stars[1]}}</li>
-                    <li>{{movie.stars[2]}}</li>
-                </ul> -->
-            </div>
-        </div>
-    </div>
+    <ng-view></ng-view>
+
+
 </body>
 
 </html>

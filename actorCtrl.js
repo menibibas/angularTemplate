@@ -8,7 +8,7 @@ app.controller("actorCtrl", function ($scope,$http) {
         this.birthday = birthday;
         this.imdb = imdb;
     }
-    Actor.prototype.fullName = function ($scope) {
+    Actor.prototype.fullName = function () {
         var fullName = this.fname+" "+this.lname;
         return fullName;
     };

@@ -33,8 +33,26 @@ app.factory("movieSrv", function($log,$http,$q,convert) {
     
         return async.promise;
       }
+
+      function getMovieByIndex(index) {
+        var async = $q.defer();
+    
+        // Getting all the cars and returning a single car by its index in the array
+        getMovies().then(function(movies) {
+          if (index >= movies.length) {
+            async.reject("Index out of bounds")
+          }
+          
+          async.resolve(movies[index]);
+        }, function(err) {
+          async.reject(err);
+        })
+    
+        return async.promise;
+      }
       return {
-        getMovies: getMovies
+        getMovies: getMovies,
+        getMovieByIndex: getMovieByIndex
       }
     
       

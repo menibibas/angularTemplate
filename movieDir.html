@@ -15,7 +15,8 @@
     <div class="media">
         <img class="mr-5" ng-src="{{movie.poster}}">
         <div class="media-body">
-            <h5 class="mt-0">{{movie.name}}</h5>
+
+           <h5 class="mt-0"><a href="#!movie/movie:id">{{movie.name}}</a></h5>
             <p>{{movie.release|date}}</p>
             <p>{{movie.convertToMinutes()}}</p>
             <h6>Main Stars</h6>
