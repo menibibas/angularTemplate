@@ -71,7 +71,7 @@ $scope.onSelectActor = function(actor) {
     for (var i = 0; i < res.data.length; i++) {
       var actor = new Actor(res.data[i].fname, res.data[i].lname, 
         res.data[i].image, res.data[i].birthday, res.data[i].imdb);
-      $scope.actors.push(actor);
+        $scope.actors.push(actor);
       }
   }, function(err) {
     console.error(err);

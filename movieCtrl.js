@@ -51,15 +51,11 @@ app.controller("movieCtrl", function (movieSrv,$scope) {
   }
 
   $scope.openMovieDetails = function(movie) {
-    
-    var index = $scope.cars.indexOf(movie);
+    var index = $scope.movies.indexOf(movie);
     $location.path("/movies/" + index);
     
   }
   
   // $scope.classes = ["red", "bg-blue"];
-  
-  
-
-   
+    
 });

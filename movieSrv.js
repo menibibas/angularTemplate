@@ -2,7 +2,7 @@ app.factory("movieSrv", function($log,$http,$q,convert) {
   
     function Movie (data/*name, releaseDate, length, poster, stars*/) {
         this.name = data.name;
-        this.release = data.releaseDate;
+        this.release = data.release;
         this.length = data.length;
         this.poster = data.poster;
         this.stars = data.stars;

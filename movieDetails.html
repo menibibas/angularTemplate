@@ -3,7 +3,7 @@
         <img src="{{movie.poster}}">
         <p>name: {{movie.name}}</p>
         <p>release: {{movie.release|date}}</p>
-        <p>Length: {{movie.convertToMinutes()}</p>
+        <p>Length: {{movie.convertToMinutes()}}</p>
         <h6>Main Stars</h6>
             <ul>
                 <li ng-repeat="(key,value) in movie.stars">{{value}}</li>
